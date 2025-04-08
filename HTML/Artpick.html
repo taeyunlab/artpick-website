@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARTPICK 대전 투어</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-image: url('daejeon_main.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .package-section {
+      padding: 40px 20px;
+    }
+    .packages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .package {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .package:hover {
+      transform: translateY(-5px);
+    }
+    .package img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .package-content {
+      padding: 15px;
+    }
+    .package-content h3 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    .package-content p {
+      font-size: 0.9rem;
+      margin: 10px 0;
+      color: #666;
+    }
+    .package-content .price {
+      color: #e74c3c;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>대전 관광 패키지</h1>
+    <p>대전의 구석구석, 동네별 매력을 느껴보세요!</p>
+  </header>
+
+  <section class="package-section">
+    <div class="packages">
+      <div class="package">
+        <img src="dunsan.jpg" alt="둔산동 시티투어">
+        <div class="package-content">
+          <h3>🏙️ 둔산동 시티투어</h3>
+          <p>대전의 중심, 현대적인 시청 주변 문화 체험</p>
+          <p class="price">₩70,000</p>
+        </div>
+      </div>
+      <div class="package">
+        <img src="galma.jpg" alt="갈마동 산책 코스">
+        <div class="package-content">
+          <h3>🌿 갈마동 자연산책 + 힐링카페</h3>
+          <p>조용한 주택가와 숲길, 힐링 스팟 탐방</p>
+          <p class="price">₩50,000</p>
+        </div>
+      </div>
+      <div class="package">
+        <img src="wolpyeong.jpg" alt="월평동 문화산책">
+        <div class="package-content">
+          <h3>🎨 월평동 예술거리 산책</h3>
+          <p>월평예술문화의 거리, 예술작품과 함께하는 여정</p>
+          <p class="price">₩65,000</p>
+        </div>
+      </div>
+      <div class="package">
+        <img src="eunhaeng.jpg" alt="은행동 거리 탐방">
+        <div class="package-content">
+          <h3>🛍️ 은행동 맛집 & 패션로드</h3>
+          <p>젊음의 거리 은행동, 트렌디한 맛과 쇼핑의 천국</p>
+          <p class="price">₩85,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

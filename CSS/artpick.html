@@ -1,0 +1,51 @@
+mport React from "react";
+
+export default function MateAppScreens() {
+  return (
+    <div className="w-full h-screen flex flex-col items-center justify-center bg-white p-6 space-y-12">
+      {/* Onboarding Screens */}
+      <section className="w-full max-w-md text-center">
+        <h1 className="text-3xl font-bold mb-4">Welcome to MATE ARTPICK</h1>
+        <p className="text-base text-gray-600">Discover Korea like never before – connect, explore, and share.</p>
+        <img src="/images/onboarding1.png" alt="Explore Korea" className="w-full mt-6 rounded-2xl shadow" />
+      </section>
+
+      {/* Home Screen */}
+      <section className="w-full max-w-md text-center">
+        <h1 className="text-2xl font-bold mb-2">Home</h1>
+        <p className="text-base text-gray-600">Recommended destinations and mates based on your interests.</p>
+        <div className="grid grid-cols-2 gap-4 mt-4">
+          <div className="bg-gray-100 p-4 rounded-xl shadow">Seoul</div>
+          <div className="bg-gray-100 p-4 rounded-xl shadow">Busan</div>
+          <div className="bg-gray-100 p-4 rounded-xl shadow">Daejeon</div>
+          <div className="bg-gray-100 p-4 rounded-xl shadow">Gyeongju</div>
+        </div>
+      </section>
+
+      {/* Tourist Spot Detail Page */}
+      <section className="w-full max-w-md text-left">
+        <h1 className="text-2xl font-bold mb-2">Daejeon Sky Park</h1>
+        <img src="/images/daejeon-spot.jpg" alt="Sky Park" className="w-full rounded-xl shadow mb-4" />
+        <p className="text-base text-gray-700">A beautiful park in the heart of Daejeon, great for sunset views and picnic vibes.</p>
+        <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-xl">Save / Share</button>
+      </section>
+
+      {/* Mate Matching Page */}
+      <section className="w-full max-w-md text-center">
+        <h1 className="text-2xl font-bold mb-4">Find Your Mate</h1>
+        <div className="grid grid-cols-1 gap-4">
+          <div className="p-4 bg-white border rounded-xl shadow">
+            <h2 className="text-lg font-semibold">Anna (USA)</h2>
+            <p className="text-sm text-gray-500">Photography, Hiking</p>
+            <button className="mt-2 px-3 py-1 bg-green-500 text-white rounded">Chat</button>
+          </div>
+          <div className="p-4 bg-white border rounded-xl shadow">
+            <h2 className="text-lg font-semibold">Junho (Korea)</h2>
+            <p className="text-sm text-gray-500">Language Exchange, Café Tours</p>
+            <button className="mt-2 px-3 py-1 bg-green-500 text-white rounded">Chat</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

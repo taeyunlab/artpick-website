@@ -1,0 +1,22 @@
+import processing.serial.*;
+
+Serial myPort;
+int whichKey = -1;
+String str = "";
+
+void setup() {
+size(320,180);
+PFont myFont = createFont(PFont.list()[10],24);
+textFont (myFont);
+
+String portName ="COM6";
+myPort = new Serial (this, portName, 115200);
+myPort.bufferUntil("\n"); // 줄바꿈이 들어올 때까지 버퍼링
+}
+
+void draw() {
+
+background(0); // 배경색:검정
+ fill(255);
+text("Recived : "+ str,10, 40);
+text("Last Sent : " + char(whichkey), 10,80);

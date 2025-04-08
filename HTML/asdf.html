@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YG Homepage Clone</titl
+
+    .main-content img {
+      width: 45%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .main-content img {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">YG</div>
+    <nav>
+      <ul>
+        <li><a href="#">ABOUT YG</a></li>
+        <li><a href="#">ARTISTS</a></li>
+        <li><a href="#">ACTORS</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">SUSTAINABILITY</a></li>
+        <li><a href="#">INVESTORS</a></li>
+      </ul>
+    </nav>
+    <div class="language-selector">KO ▼</div>
+  </header>
+
+  <div class="main-content">
+    <img src="https://ygfamily.com/contents/images/2023/07/artist1.jpg" alt="Group 1">
+    <img src="https://ygfamily.com/contents/images/2023/07/artist1.jpg" alt="Group 2">
+  </div>
+
+  <script>
+    // Language selector toggle
+    const langSelector = document.querySelector('.language-selector');
+    langSelector.addEventListener('click', () => {
+      alert('Language selector clicked!');
+    });
+  </script>
+</body>
+</html
